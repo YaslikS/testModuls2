@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.Toast
-import com.yasliks.mytestlibrary.LibraryActivity
+import com.yasliks.mytestlibrary.libraryActivity
 import com.yasliks.testmoduls2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         binding?.BTN?.setOnClickListener {
             Toast.makeText(this, "GO", Toast.LENGTH_SHORT).show()
-            val powerIntent = Intent(this, LibraryActivity::class.java)
+            val powerIntent = Intent(this, libraryActivity::class.java)
             startActivity(powerIntent)
         }
 
